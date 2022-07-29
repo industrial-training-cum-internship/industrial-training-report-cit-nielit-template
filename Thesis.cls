@@ -251,8 +251,8 @@ in partial fulfilment for the award of the degree of \par
 
 {\bfseries
 by \par
-\authornames \par
-(\rollnumber) \par
+\authornames(\rollnumber) \par
+Aditya Raj (123456789) \par
 }
 
 
