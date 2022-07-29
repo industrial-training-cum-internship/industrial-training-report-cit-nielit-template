@@ -253,6 +253,7 @@ in partial fulfilment for the award of the degree of \par
 by \par
 \authornames(\rollnumber) \par
 Aditya Raj (123456789) \par
+Amit Kumar Singh(363728373)\par
 }
 
 
