@@ -240,7 +240,7 @@
 \vfill
 
 
-\normalsize{\coursecds report submitted to \par
+\normalsize{\coursecds\space report submitted to \par
 \univname \par
 in partial fulfilment for the award of the degree of \par 
 \degreename \par
@@ -251,16 +251,16 @@ in partial fulfilment for the award of the degree of \par
 
 {\bfseries
 by \par
-\authornames(\rollnumber) \par
-Aditya Raj (123456789) \par
-Amit Kumar Singh(363728373)\par
+Aditya Raj(1221631478)\par
+ Amit Kumar Singh(363728373)\par
+ \authornames(\rollnumber) \par
 }
 
 
 \vfill
 {\bfseries
-Under the supervision of \par
-\supname \par
+One Month Project based Industrial Training on \par
+\subjectname \par
 }
 \vfill
 \includegraphics[width=13cm]{logo.jpg}\par
@@ -271,7 +271,7 @@ Under the supervision of \par
 \deptname\space(NIELIT) \par
 \univname, \placesh\par
 (Deemed to be University under MoE, Govt. of India)\par
-\semsubs \par
+% \semsubs \par
 \datesubs \par
 }
 
@@ -279,171 +279,41 @@ Under the supervision of \par
 
 \end{titlepage}
 }
-%\renewcommand\maketitle{
-%  \btypeout{Title Page}
-%  \hypersetup{pdftitle={\@title}}
-%  \hypersetup{pdfsubject=\subjectname}
-%  \hypersetup{pdfauthor=\authornames}
-%  \hypersetup{pdfkeywords=\keywordnames}
-%  \thispagestyle{empty}
-%  \begin{titlepage}
-%    \let\footnotesize\small
-%    \let\footnoterule\relax
-%    \let \footnote \thanks
-%    \setcounter{footnote}{0}
-%    \null\vfil
-%    \vskip 60\p@
-%    \begin{center}
-%      \setlength{\parskip}{0pt}
-%      {\large\textbf{\UNIVNAME}\par}
-%      \vfill
-%      {\huge \bf \@title \par}
-%      \vfill
-%      {\LARGE by \par}
-%      \smallskip
-%      {\LARGE \authornames \par}
-%      \vfill
-%      {\large A thesis submitted in partial fulfillment for the \par}
-%      {\large degree of \degreename \par}
-%      \bigskip
-%      \bigskip
-%      {\large in the \par}
-%      {\large \facname \par}
-%      {\large \deptname \par} 
-%      \bigskip
-%      \bigskip
-%      \bigskip
-%      {\Large \@date \par}
-%      \bigskip
-%    \end{center}
-%    \par
-%    \@thanks
-%    \vfil\null
-%  \end{titlepage}
-%  \setcounter{footnote}{0}%
-%  \global\let\thanks\relax
-%  \global\let\maketitle\relax
-%  \global\let\@thanks\@empty
-%  \global\let\@author\@empty
-%  \global\let\@date\@empty
-%  \global\let\@title\@empty
-%  \global\let\title\relax
-%  \global\let\author\relax
-%  \global\let\date\relax
-%  \global\let\and\relax
-%  \cleardoublepage
-%}
+%----------------------------------------------------------------------------------------
+%	DECLARATION PAGE DESIGN
+%----------------------------------------------------------------------------------------
 \newcommand\Declaration[1]{
-\btypeout{Declaration}
-\addtotoc{Declaration}
-\thispagestyle{plain}
-%\null\vfil
-%\vskip 60\p@
-\begin{center}
-\large{\bfseries DECLARATION}
-\end {center}
-\vspace{1cm}
-I certify that\par
-\begin{enumerate}[label=(\alph*)]
-\item The work contained in this report has been done by me under the guidance of my supervisor.
-\item The work has not been submitted to any other Institute for any degree or diploma.
-\item I have conformed to the norms and guidelines given in the Ethical Code of Conduct of the Institute.
-\item Whenever I have used materials (data, theoretical analysis, figures, and text) from other sources, I have given due credit to them by citing them in the text of the thesis and giving their details in the references. Further, I have taken permission from the copyright owners of the sources, whenever necessary.
-\end{enumerate}
-\vfill
-Date: \datesign\hfill (\authornames)\par
-\vspace{-15pt}
-Place: \placesh \hfill (\rollnumber)%\vskip 60\p@
-{\normalsize #1}
-\vfil\vfil\null
-\cleardoublepage
-}
-
-%----------------------------------------------------------------------------------------
-%	TITLE PAGE DESIGN
-%----------------------------------------------------------------------------------------
-\newenvironment{titlepg}
-{
-\hypersetup{pdftitle={\@title}}
-  \hypersetup{pdfsubject=\subjectname}
-  \hypersetup{pdfauthor=\authornames}
-  \hypersetup{pdfkeywords=\keywordnames}
-  \btypeout{Title Page}
-  \thispagestyle{empty}
-\begin{titlepage}
-\begin{spacing}{1}
-\centering
-		
-	
-\large{\bfseries \@title \par}
-\vfill
-
-
-\normalsize{{\coursecds} report submitted to \par
-\univname \par
-in partial fulfilment for the award of the degree of \par 
-\degreename \par
- in \par 
-\degreenamemajor \par
-}
-\vfill
-
-{\bfseries
-by \par
-\authornames \par
-(\rollnumber) \par
-}
-
-
-\vfill
-{\bfseries
-Under the supervision of \par
-\supname \par
-}
-\vfill
-\includegraphics[height=4cm]{logo.jpg}\par
-
-\vfill
-	
-{\bfseries
-\deptname \par
-\univname \par
-\semsubs \par
-\datesubs \par
-}
-
-\end{spacing}
-
-\end{titlepage}
-%\null\vfil
-%\cleardoublepage
-}
-%----------------------------------------------------------------------------------------
-
-%----------------------------------------------------------------------------------------
-%	ABSTRACT PAGE DESIGN
-%----------------------------------------------------------------------------------------
-\newenvironment{abstract}
-{
-  \btypeout{Abstract Page}
-  \thispagestyle{plain}
-  %\null\vfil
-  \begin{flushleft}
-    \setlength{\parskip}{0pt}
-    %{\normalsize \UNIVNAME \par} % University name in capitals
-    %\bigskip
-    {\centering{\huge{\textit{Abstract}}} \par}
-    \bigskip
-    \HRule \\[0.4cm] % Horizontal line
-		Name of the student:	 \textbf{\authornames}	\hfill Roll No: \textbf{\rollnumber} \\
-		Degree for which submitted:  \textbf{\degreename} \\
-		Department:  \textbf{\deptname} \\
-		Thesis title: \textbf{\@title}\\
-		Thesis supervisor:  \textbf{\supname}\\
-		Month and year of thesis submission: \textbf{{{\datesubs}}\\[0.4cm] }
-		\HRule \\[1.5cm] % Horizontal line	
-	
-  \end{flushleft}
+    \btypeout{Declaration}
+    \addtotoc{Declaration}
+    \thispagestyle{plain}
+    %\null\vfil
+    %\vskip 60\p@
+    \begin{center}
+    \large{\bfseries DECLARATION}
+    \end {center}
+    \vspace{1cm}
+    I certify that\par
+    \begin{enumerate}[label=(\alph*)]
+    \item The work contained in this report has been done by me under the guidance of my supervisor.
+    \item The work has not been submitted to any other Institute for any degree or diploma.
+    \item I have conformed to the norms and guidelines given in the Ethical Code of Conduct of the Institute.
+    \item Whenever I have used materials (data, theoretical analysis, figures, and text) from other sources, I have given due credit to them by citing them in the text of the thesis and giving their details in the references. Further, I have taken permission from the copyright owners of the sources, whenever necessary.
+    \end{enumerate}
+    \vfill
+    \hfill  Aditya Raj\par
+    \vspace{-15pt}
+    \hfill(47826252)\par
+    \vspace{1cm}
+    \hfill Amit Kumar Singh\par
+    \vspace{-15pt}
+    \hfill(47826252)\par
+    \vspace{1cm}
+    Date: \datesign\hfill \authornames\par
+    \vspace{-15pt}
+    Place: \placesh \hfill (\rollnumber)%\vskip 60\p@
+    {\normalsize #1}
+    \vfil\vfil\null
+    \cleardoublepage
 }
 %----------------------------------------------------------------------------------------
 %	CERTIFICATE PAGE DESIGN
@@ -458,7 +328,7 @@ Under the supervision of \par
 \MakeUppercase{\placeln}\par}
 \end{spacing}
 \vspace{0.8cm}
-\includegraphics[height=7cm]{logo.jpg}\par
+\includegraphics[width=15cm]{logo.jpg}\par
 \vspace{0.5cm}
 \textit{\textbf {\large{CERTIFICATE}}}\par
 \end{center}
@@ -475,8 +345,8 @@ This is to certify that the project report entitled \enquote{\textbf{\ul\ttitle}
 %\begin{tabularx}{\textwidth}{|l|>{\raggedleft\arraybackslash}X|}
 \begin{tabu} to \textwidth{X[l]X[1.15c]}
 &\supname\\
-Date: \datesign&\deptname\\
-Place: \placesh&\univname\\                                                                                                                &\placeln\\
+Date: \datesign&\deptname\space(NIELIT)\\
+Place: \placesh& Guwahati - 781008, INDIA \\                                                                                                               
 %\end{tabularx}
 \end{tabu}
 \vfil\vfil\null
@@ -509,58 +379,41 @@ This is to certify that the project report entitled \enquote{\textbf{\ul\ttitle}
 \renewcommand{\arraystretch}{0.75}
 %\begin{tabularx}{\textwidth}{|l|>{\raggedleft\arraybackslash}X|}
 \begin{tabu} to \textwidth{X[l]X[r]}
-\textbf{PROJECT CO-ORDINATOR} &\textbf{EXTERNAL EXAMINER}\\
-
-% \supname & Dr. Amitava Nag\\
-% \deptname & \deptname\\
-% \univname &\univname\\
-% Date: \datesign&\deptname\\
-% Place: \placesh&\univname\\                                                                                                                &\placeln\\
-%\end{tabularx}
+\textbf{Dr. Pranav Kumar Singh }\par
+Assistant Professor\par
+Dean Alumni and External Relations 
+&\textbf{Bikramjit Choudhury}\par
+Assistant Professor\par
+Coordinator CIT \& NIELIT
 \end{tabu}
 \vfil\vfil\null
 \cleardoublepage
 }
-
-
 %----------------------------------------------------------------------------------------
-%	DECLARATION DESIGN
-%----------------------------------------------------------------------------------------
-%\newenvironment{declrpg}
-%{
-%\begin{titlepage}
-%\begin{spacing}{1.5}
-%		
-%\begin{center}
-%\large{\bfseries DECLARATION}
-%\end {center}
-%\vspace{1cm}
-%
-%
-%I certify that\par
-%\begin{enumerate}[label=(\alph*)]
-%\item The work contained in this report has been done by me under the guidance of my supervisor.
-%\item The work has not been submitted to any other Institute for any degree or diploma.
-%\item I have conformed to the norms and guidelines given in the Ethical Code of Conduct of the Institute.
-%\item Whenever I have used materials (data, theoretical analysis, figures, and text) from other sources, I have given due credit to them by citing them in the text of the thesis and giving their details in the references. Further, I have taken permission from the copyright owners of the sources, whenever necessary.
-%\end{enumerate}
-%
-%\vfill
-%
-%
-%
-%
-%Date: \hfill (\authorname)\par
-%Place: \placesh \hfill (\rollnumber)
-%
-%	
-%
-%\end{spacing}
-%
-%\end{titlepage}
-%}
 
 %----------------------------------------------------------------------------------------
+%	ABSTRACT PAGE DESIGN
+% %----------------------------------------------------------------------------------------
+\newenvironment{abstract}
+ {
+  \btypeout{Abstract Page}
+   \thispagestyle{plain}
+  %\null\vfil
+  \begin{flushleft}
+    \setlength{\parskip}{0pt}
+    %{\normalsize \UNIVNAME \par} % University name in capitals
+    %\bigskip
+    {\centering{\huge{\textit{Abstract}}} \par}
+    \bigskip
+    \HRule \\[0.4cm] % Horizontal line
+		
+	
+  \end{flushleft}
+ }
+%----------------------------------------------------------------------------------------
+
+
+
 
 \addtocounter{secnumdepth}{1}
 \setcounter{tocdepth}{6}
