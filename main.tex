@@ -23,7 +23,6 @@
 
 \usepackage{booktabs}  
 \usepackage{siunitx}
-%\usepackage[showframe=false]{geometry}
 \usepackage{subfigure}
 
 \nprounddigits{3}
@@ -33,8 +32,6 @@
 \setstackEOL{\#}
 \setstackgap{L}{12pt}
 
-
-%\usepackage{subcaption} %incompatible with subfig
 \graphicspath{{Pictures/}} % Specifies the directory where pictures are stored
 \usepackage[square,numbers]{natbib} % Use the natbib reference package - read up on this to edit the reference style; if you want text (e.g. Smith et al., 2012) for the in-text references (instead of numbers), remove 'numbers' v
 
@@ -44,7 +41,7 @@
 \supervisor{Professor X}
 \degree{Bachelor of Technology}
 \degreemajor{[Department Name]}
-\authors{John Doe}
+\authors{Swaubhik Chakraborty}
 \rollno{123456789}
 \university{Central Institute of Technology}
 \department{National Institute of Electronics \& Information Technology}
@@ -56,18 +53,13 @@
 \datesig{\today}
 \semsub{Odd Semester, 2022-23}
 \keywords{ML, IoT, Blockchain}
-\coursecd{Industrial project}
+\coursecd{Industrial Training}
+\subject{Machine Learning on Python}
 
 \title{\ttitle} % Defines the thesis title - don't touch this
 \begin{document}
-%\makeatletter
-%\renewcommand*{\NAT@nmfmt}[1]{\textsc{#1}}
-%\makeatother
 
-% prints author names as small caps
-
-
-\frontmatter % Use roman page numbering style (i, ii, iii, iv...) for the pre-content pages
+\frontmatter 
 
 \setstretch{1.6} % Line spacing of 1.6 (double line spacing)
 
@@ -113,6 +105,9 @@
 
 \clearpage % Start a new page
 
+\certificateexam{\addtocontents{toc}{}}
+
+\clearpage
 %----------------------------------------------------------------------------------------
 %	ABSTRACT PAGE
 %----------------------------------------------------------------------------------------
@@ -167,26 +162,14 @@ Enter acknowledgement content here.
 \lhead{\emph{Abbreviations}} % Set the left side page header to "Abbreviations"
 \listofsymbols{ll} % Include a list of Abbreviations (a table of two columns)
 {
+\textbf{CIT} & \textbf{C}entral \textbf{I}nstitute \textbf{T}echnology\\
+\textbf{NIELIT} & \textbf{N}ational \textbf{I}nstitute of \textbf{E}lectronics \& \textbf{I}nformation \textbf{T}echnology\\
 \textbf{FEA} & \textbf{F}inite \textbf{E}lement \textbf{A}nalysis \\
 \textbf{FEM} & \textbf{F}inite \textbf{E}lement \textbf{M}ethod \\
 \textbf{LVDT} & \textbf{L}inear \textbf{V}ariable \textbf{D}ifferential \textbf{T}ransformer \\
 \textbf{RC} & \textbf{R}einforced \textbf{C}oncrete
 %\textbf{Acronym} & \textbf{W}hat (it) \textbf{S}tands \textbf{F}or \\
 }
-
-%----------------------------------------------------------------------------------------
-%	PHYSICAL CONSTANTS/OTHER DEFINITIONS
-%----------------------------------------------------------------------------------------
-%
-%\clearpage % Start a new page
-%
-%\lhead{\emph{Physical Constants}} % Set the left side page header to "Physical Constants"
-%
-%\listofconstants{lrcl} % Include a list of Physical Constants (a four column table)
-%{
-%Speed of Light & $c$ & $=$ & $2.997\ 924\ 58\times10^{8}\ \mbox{ms}^{-\mbox{s}}$ (exact)\\
-%% Constant Name & Symbol & = & Constant Value (with units) \\
-%}
 
 %----------------------------------------------------------------------------------------
 %	SYMBOLS
@@ -206,75 +189,6 @@ $ \varepsilon $ & strain tensor \\
 }
 
 %----------------------------------------------------------------------------------------
-%	DEDICATION
-%----------------------------------------------------------------------------------------
-%
-%\setstretch{1.3} % Return the line spacing back to 1.3
-%
-%\pagestyle{empty} % Page style needs to be empty for this page
-%
-%\dedicatory{For/Dedicated to/To my\ldots} % Dedication text
-%
-%\addtocontents{toc}{\vspace{2em}} % Add a gap in the Contents, for aesthetics
-
-%----------------------------------------------------------------------------------------
-%	Introduction to CIT & NIELIT
-%----------------------------------------------------------------------------------------
-
-\chapter{Introduction to CIT \& NIELIT} % Main chapter title
-
-\label{Chapter0} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
-
-\lhead{\emph{CIT \& NIELIT}} % Change X to a consecutive number; this is for the header on each page - perhaps a shortened title
-
-%----------------------------------------------------------------------------------------
-%	SECTION 1
-%----------------------------------------------------------------------------------------
-
-\section*{CIT}
-The Central Institute of Technology Kokrajhar (CITK) is a public technical university established in 2006 and owned by the Government of India. It is located in Kokrajhar, Assam, India. The institute is spread across 300 acres (1.2 km2) in Kokrajhar and offers Bachelor of Technology (B.Tech.), Bachelor of Design (B.Des.), Master of Technology (M.Tech.), Master of Design (M.Des.), PhD, and Diploma programs in various disciplines.\cite{enwiki:citk}
-
-% \subsection*{Courses}
-
-
-
-
-%----------------------------------------------------------------------------------------
-%	SECTION 2
-%----------------------------------------------------------------------------------------
-
-\section*{NIELIT Guwahati}
-National Institute of Electronics \& Information Technology (NIELIT), formerly known as the DOEACC Society, is a society that offers Information Technology and Electronics training at different levels.
-
-It is associated with the Ministry of Electronics and Information Technology of the Government of India.\cite{enwiki:nielit}
-
-
-
-\begin{figure}[!htbp]
-\centering
-\includegraphics[width=15cm]{nielit.jpeg}
-\caption{NIELIT Guwahati}
-\label{fignielit}
-\end{figure}
-
-
-%----------------------------------------------------------------------------------------
-%  Industraial Training
-%----------------------------------------------------------------------------------------
-
-\chapter{Industraial Training} % Main chapter title
-
-\label{Chapter0} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
-
-\lhead{\emph{ Industraial Training }} % Change X to a consecutive number; this is for the header on each page - perhaps a shortened title
-
-\section*{ About BootCamp}
- Enter here 
- 
-
-
-
-%----------------------------------------------------------------------------------------
 %	THESIS CONTENT - CHAPTERS
 %----------------------------------------------------------------------------------------
 
@@ -286,7 +200,7 @@ It is associated with the Ministry of Electronics and Information Technology of 
 % Uncomment the lines as you write the chapters
 
 \input{Chapters/Chapter1}
-%\input{Chapters/Chapter4} 
+\input{Chapters/Chapter2} 
 %\input{Chapters/Chapter5} 
 %\input{Chapters/Chapter6} 
 %\input{Chapters/Chapter7} 
