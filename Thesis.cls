@@ -446,8 +446,6 @@ Under the supervision of \par
   \end{flushleft}
 }
 %----------------------------------------------------------------------------------------
-
-%----------------------------------------------------------------------------------------
 %	CERTIFICATE PAGE DESIGN
 %----------------------------------------------------------------------------------------
 \newenvironment{certificate}
@@ -484,6 +482,47 @@ Place: \placesh&\univname\\                                                     
 \vfil\vfil\null
 \cleardoublepage
 }
+
+\newenvironment{certificateexam}
+{
+  \btypeout{Certificate Page}
+  \thispagestyle{plain}
+\begin{center}
+\begin{spacing}{1}\bfseries\large{\DEPTNAME\par
+\UNIVNAME\par
+\MakeUppercase{\placeln}\par}
+\end{spacing}
+%\vspace{0.8cm}
+\includegraphics[height=7cm]{logo.jpg}\par
+%\vspace{0.5cm}
+\textit{\textbf {\large{CERTIFICATE}}}\par
+\end{center}
+%\vspace{1cm}
+%\newcommand*\together[1]{#1}
+%\soulregister\together{1}
+%\soulregister{\authornames}{0}
+
+This is to certify that the project report entitled \enquote{\textbf{\ul\ttitle}} submitted by  \textbf{\ur\authorname} to {\univname} towards partial fulfilment of requirements for the award of degree of {\degreename} in {\degreenamemajor} is a record of bona fide work carried out by him under my supervision and guidance during \semsubs.
+
+%\vspace{4cm}
+\vfill
+\renewcommand{\arraystretch}{0.75}
+%\begin{tabularx}{\textwidth}{|l|>{\raggedleft\arraybackslash}X|}
+\begin{tabu} to \textwidth{X[l]X[r]}
+\textbf{PROJECT CO-ORDINATOR} &\textbf{EXTERNAL EXAMINER}\\
+
+% \supname & Dr. Amitava Nag\\
+% \deptname & \deptname\\
+% \univname &\univname\\
+% Date: \datesign&\deptname\\
+% Place: \placesh&\univname\\                                                                                                                &\placeln\\
+%\end{tabularx}
+\end{tabu}
+\vfil\vfil\null
+\cleardoublepage
+}
+
+
 %----------------------------------------------------------------------------------------
 %	DECLARATION DESIGN
 %----------------------------------------------------------------------------------------
