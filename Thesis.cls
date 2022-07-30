@@ -252,7 +252,7 @@ in partial fulfilment for the award of the degree of \par
 {\bfseries
 by \par
 Aditya Raj(1221631478)\par
- Amit Kumar Singh(363728373)\par
+Amit Kumar Singh(363728373)\par
  \authornames(\rollnumber) \par
 }
 
