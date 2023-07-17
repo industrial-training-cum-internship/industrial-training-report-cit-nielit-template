@@ -269,7 +269,7 @@ One Month Project based Industrial Training on \par
 	
 {\bfseries
 \deptname\space(NIELIT) \par
-\univname, \placesh\par
+\univname \placesh\par
 (Deemed to be University under MoE, Govt. of India)\par
 % \semsubs \par
 \datesubs \par
